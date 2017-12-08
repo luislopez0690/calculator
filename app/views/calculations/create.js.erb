@@ -1,0 +1,6 @@
+var html =  "<tr><td> <%= @result %> </td></tr>"
+
+if ($("#logs tr").length == 10){
+	$("#logs  tr:last-of-type").remove();
+}
+$("#logs ").prepend( html );

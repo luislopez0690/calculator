@@ -1,0 +1,22 @@
+<%= form_with(model: calculation, local: true) do |form| %>
+  <% if calculation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(calculation.errors.count, "error") %> prohibited this calculation from being saved:</h2>
+
+      <ul>
+      <% calculation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :log %>
+    <%= form.text_field :log, id: :calculation_log %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

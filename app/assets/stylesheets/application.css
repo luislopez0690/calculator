@@ -1,0 +1,129 @@
+
+.border {
+  width: 480px;
+  padding: 8px;
+  border-radius: 43px;
+  border: 3px coral solid;
+  overflow: hidden;
+  margin: auto;
+}
+
+.content {
+  width: 350px;
+  background: inherit;
+  margin: auto;
+}
+
+input[type=text] {
+  display: block;
+  clear: both;
+  font-size: 1.2em;
+  color: coral;
+  background: white;
+  border: 1px solid #dadada;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  margin: auto;
+  font-weight: bold;
+  height: 50px;
+  padding-left: 5px;
+  border: 2px coral solid;
+  padding-right: 2px;
+}
+
+input[type=text]:hover {
+  background: lime;
+  color: white;
+}
+
+ #calculator-submission{
+  display:none;
+}
+
+input[type=submit]{
+  display: none; 
+}
+
+.sh {
+  background: #ACCCCC;
+  width: 60px;
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: coral;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  align: center;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.sh:hover {
+  background: coral;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.shred {
+  padding-bottom: 5px;
+  background: #AA1111;
+  width: 60px;
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: coral;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  align: center;
+  margin: auto;
+}
+
+.shred:hover {
+  background: lime;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.link {
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 250px;  
+  display: block;
+  margin: 0 0.2em;
+  padding: 3px;
+  background: #97CAF2;
+  border-radius: 2px;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.link:hover   { background: #53A7EA; }
+.link:active  { background: #C4E1F8; }
+.link:visited { background: #F2BF97; }
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

@@ -1,0 +1,106 @@
+
+<tbody>
+  <div class="border">
+    <%= form_tag "/calculations", method: :post , remote: true,name: "cal" do  %>
+      <center>
+        <h1>Calculator</h1>
+      </center>
+
+      <div class="content">
+        <%= text_field_tag "log", nil , id:"calculator-submission" %> 
+
+        <input id="calculator-result" type="text" size="22" name="input" value="" />
+        <br/>
+        <center>
+          <table>
+            <tr>
+              <td>
+                <input type="button" class="shred" value=" C " onclick="reset()" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" √ " onclick="sqrt()" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" x² " onclick="sqr()" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 1/x " onclick="inverse()" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 7 " onclick="cal.input.value+='7'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 8 " onclick="cal.input.value+='8'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 9 " onclick="cal.input.value+='9'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" ÷ " onclick="cal.input.value+='/'" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 4 " onclick="cal.input.value+='4'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 5 " onclick="cal.input.value+='5'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 6 " onclick="cal.input.value+='6'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" X " onclick="cal.input.value+='*'" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 1 " onclick="cal.input.value+='1'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 2 " onclick="cal.input.value+='2'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 3 " onclick="cal.input.value+='3'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" - " onclick="cal.input.value+='-'" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" ◄ " onclick="delChar(this)" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 0 " onclick="cal.input.value+='0'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" . " onclick="cal.input.value+='.'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" + " onclick="cal.input.value+='+'" />
+              </td>
+            </tr>
+          </table>
+          <center>
+            <input type="button" class="shred" style="width: 120px;" value=" = " onclick="result()" />
+            <%= submit_tag %>
+          </center>
+        </center>
+      <% end %>
+    </div>
+    <br/>
+  </div>
+  <div class="content">
+    <table id="logs">
+      <center>
+        <h2> Calculator's Log </h2> 
+      </center> 
+    </table>
+  </div>
+  <br>
+</tbody>
+
+
