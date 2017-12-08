@@ -38,7 +38,5 @@ rails s
 * To visit a live version of this web app follow 
 [THIS LINK](https://calculatorllopez.herokuapp.com/)
 
-### Badges
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 
